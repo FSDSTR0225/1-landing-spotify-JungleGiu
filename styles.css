@@ -1,0 +1,343 @@
+/*comentario*/
+@font-face {
+  font-family: "Circular Spotify Text";
+  src: url("./fonts/circular-spotify-text-font/CircularSpotifyText-Black.otf")
+    format ("opentype");
+}
+@font-face {
+  font-family: "Circular Spotify Text";
+  font-weight: bold;
+  src: url("./fonts/circular-spotify-text-font/CircularSpotifyText-Bold.otf")
+    format ("opentype");
+}
+@font-face {
+  font-family: "Circular Spotify Text";
+  font-weight: light;
+  src: url("./fonts/circular-spotify-text-font/CircularSpotifyText-Light.otf")
+    format ("opentype");
+}
+@font-face {
+  font-family: "Circular Spotify Text";
+  font-weight: medium;
+  src: url("./fonts/circular-spotify-text-font/CircularSpotifyText-Medium.otf")
+    format ("opentype");
+}
+@font-face {
+  font-family: "Circular Spotify Text";
+  font-weight: regular;
+  src: url("./fonts/circular-spotify-text-font/CircularSpotifyText-Regular.otf")
+    format ("opentype");
+}
+
+@font-face {
+  font-family: "Circular Std Black";
+  src: url("https://db.onlinewebfonts.com/t/f1a22f6f15d272c7aa56da8b2c91f5e5.eot");
+  src: url("https://db.onlinewebfonts.com/t/f1a22f6f15d272c7aa56da8b2c91f5e5.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/f1a22f6f15d272c7aa56da8b2c91f5e5.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/f1a22f6f15d272c7aa56da8b2c91f5e5.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/f1a22f6f15d272c7aa56da8b2c91f5e5.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/f1a22f6f15d272c7aa56da8b2c91f5e5.svg#Circular Std Black")
+      format("svg");
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+/*MAIN HEADER*/
+header {
+  background-color: #000;
+  padding: 0 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  height: 4rem;
+}
+img.logo {
+  height: 2rem;
+  width: 7rem;
+  display: inline;
+  align-self: center;
+}
+.navigator {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 992px) {
+  .navigator {
+    display: none;
+  }
+}
+.submenu {
+  display: none;
+  position: absolute;
+  list-style: none;
+  width: 370px;
+  background-color: #434343;
+}
+
+.navigator li:hover .submenu {
+  display: block;
+}
+
+.submenu li:hover {
+  background-color: #000;
+}
+
+.submenu > li {
+  padding: 30px 20px;
+  h1 {
+    font-family: "Circular Std Black";
+    font-size: 20px;
+    color: #fff;
+    font-weight: lighter;
+  }
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #d9dadc;
+  }
+}
+
+a.navprimary,
+span {
+  font-family: "Circular Std Black";
+  margin: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+a.navsecondary {
+  font-family: "Circular Std Black";
+  margin: 20px;
+  text-decoration: none;
+  color: #d9dadc;
+}
+a.navsecondary:hover,
+a.navprimary:hover {
+  color: #1ed760;
+}
+
+/* FREE TRIAL */
+
+.freetrial {
+  background-image: linear-gradient(to bottom, #f089ada4, #000 35%);
+  display: flex;
+  height: fit-content;
+  width: auto;
+}
+.freetrial img {
+  max-width: 48%;
+  min-width: 48%;
+  height: 50%;
+}
+.maincontent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+  color: #fff;
+  text-align: left;
+  padding-left: 8%;
+  margin: 50px 0;
+  max-width: 100%;
+  min-width: 40%;
+}
+@media screen and (max-width: 1199px) {
+  .maincontent {
+    padding-left: 20px;
+  }
+}
+.maincontent h1 {
+  font-family: "Circular Std Black";
+  font-weight: bold;
+  font-size: 45px;
+  max-width: 600px;
+  min-width: 450px;
+}
+.maincontent p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+button:first-child {
+  font-family: "Circular Std Black";
+  font-size: 16px;
+  padding: 10px 30px;
+  background-color: #ef77a1;
+  border: solid 1px #ef77a1;
+  border-radius: 28px;
+}
+button:last-child {
+  font-family: "Circular Std Black";
+  font-size: 16px;
+  padding: 10px 30px;
+  background-color: transparent;
+  border: solid 1px #fff;
+  border-radius: 28px;
+  color: #fff;
+}
+button:first-child:hover {
+  background-color: #e698b3;
+  color: #000;
+  font-size: 17px;
+  border: solid 2px #e698b3;
+}
+button:last-child:hover {
+  font-size: 17px;
+  background-color: transparent;
+  border: solid 1px #fff;
+}
+p.smalltext {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  max-width: 60%;
+  min-width: 60%;
+}
+.alert {
+  display: flex;
+  align-items: center;
+  font-family: "Circular Std Black";
+  font-size: 15px;
+  background-color: #2e2e2e;
+  padding: 3px 3px;
+}
+
+/* COMPARATIVE */
+
+.comparative {
+  display: grid;
+  grid-template-columns: repeat(21, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+}
+.comparative h1 {
+  font-family: "Circular Std Black";
+  font-size: 34px;
+  grid-column-start: 8;
+  grid-column-end: 15;
+}
+.comparative h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  grid-column-start: 7;
+  grid-column-end: 16;
+}
+.comparative .table {
+  grid-column-start: 8;
+  grid-column-end: 15;
+  margin: 40px auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.table th {
+  font-weight: bold;
+  text-align: start;
+
+}
+.phantom {
+  border-bottom: #fff solid 1px;
+  th {
+    padding: 10px 10px;
+  }
+}
+
+
+.table td {
+  padding: 20px 10px;
+  text-align: left;
+  text-decoration: underline dashed 0 #f5f5f5;
+  text-underline-offset: 3px;
+  line-height: 1.5;
+}
+
+.symbol {
+  align-content: center;
+  text-decoration: none;
+}
+tr.inner {
+  border-bottom: #f5f5f5 solid 1px;
+}
+
+tr.inner :hover {
+  background-color: #434343;
+  .symbol {
+    background-color: #d9dadc;
+  }
+}
+
+/* SUBSCIPTION PLANS */
+.subscription {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.payment-method {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.circuit-logo {
+  display: flex;
+  max-width: 50px;
+  justify-content: center;
+  margin: 20px 0;
+}
+#paypal {
+  max-width: 50px;
+  background-color: #fff;
+  border: #fff solid 1px;
+  border-radius: 5px;
+}
+.payment-method h1 {
+  font-family: "Circular Std Black";
+  font-size: 32px;
+}
+.payment-method p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  max-width: 65%;
+  text-align: center;
+}
+.benefits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  padding: 30px 10%;
+}
+
+.benefits h2 {
+  font-family: "Circular Std Black";
+  font-size: 25px;
+  text-align: center;
+}
+.benefits ul {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  & li ::before {
+    content: "✓";
+  }
+}
