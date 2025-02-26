@@ -106,7 +106,7 @@ img.logo {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  box-sizing: border-box;
+ 
 }
 
 @media screen and (max-width: 992px) {
@@ -395,7 +395,9 @@ tr.inner :hover {
 
 .container {
   width: 70%;
-  margin: auto;
+  margin: 0 12% 0 12%;
+  display: flex;
+
 }
 
 .cards {
@@ -544,3 +546,37 @@ margin-top: auto;
     font-weight: bold;
   }
 }
+
+/* FAQ */
+.questions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: #fff;
+  text-align: center;
+  margin: 150px 12%;
+  font-family: 'circular spotify text';
+}
+
+  .faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:stretch ;
+  gap: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.faq h1 {
+  font-size: 25px;
+  font-weight: 700;
+
+}
+.faq p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 2;
+}
+
